@@ -34,9 +34,7 @@ public class STTManager {
             mSpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(context);
             mSpeechRecognizer.setRecognitionListener(new Recognition());
             Toast.makeText(context, "Reconhecimento de fala disponível", Toast.LENGTH_SHORT).show();
-            Log.i("Sucesso", "Iniciado com Sucesso");
         } else {
-            Log.e("Falhou", "Não foi possivel usar o reconhecimento de voz");
             Toast.makeText(context, "Reconhecimento de fala não disponível neste dispositivo", Toast.LENGTH_SHORT).show();
         }
     }
